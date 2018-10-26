@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.thomasgreg.findmypet.ExtratoActivity">
+
+    <TableLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_marginTop="20px"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_span="2"
+                android:textSize="30dp"
+                android:text="Extrato"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="match_parent"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="10px"
+            android:layout_marginTop="90px"
+            >
+            <TextView
+                android:text="Saldo: "
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_width="match_parent"/>
+            <TextView
+                android:text="R$0,00"
+                android:id="@+id/tvValor"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:layout_weight="4"
+                android:layout_width="match_parent"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="15px"
+                android:textSize="17dp"
+                android:text="Selecione o que deseja usar!"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="15px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:text="Crédito"
+                />
+            <TextView
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="15px"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/tvCredito"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lvCreditos"
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_height="280px">
+            </ListView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="15px"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bonus"
+                />
+            <TextView
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:id="@+id/tvBonus"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ListView
+                android:id="@+id/lvBonus"
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_height="280px">
+            </ListView>
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

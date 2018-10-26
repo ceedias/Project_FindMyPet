@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="br.com.findmypet.findmypet.CadastroPerdidosActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/raca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Raça"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginTop="30dp"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/cor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cor"
+                android:inputType="text"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Selecione uma situação"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipo_cachorro"
+            android:prompt="@string/label_situacao" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/ibt_foto"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btTirarFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="30dp"
+            android:layout_margin="16dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

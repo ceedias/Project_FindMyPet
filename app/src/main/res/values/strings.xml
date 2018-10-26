@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Find My Pet</string>
+
+    <string name="label_situacao">Escolha a situação</string>
+
+    <string-array name="tipo_cachorro">
+        <item>Escolha uma opção</item>
+        <item>Perdido</item>
+        <item>Na Rua</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Abrir Navegador Drawer</string>
+    <string name="navigation_drawer_close">Fechar Navegador Drawer</string>
+    <string name="nav_header_title">Find My Pet</string>
+    <string name="nav_header_subtitle">suporte@findmypet.com</string>
+    <string name="nav_header_desc">Cabeçalho Navegador</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_login"></string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_lista_cartao">Cachorros Perdidos</string>
+    <string name="title_activity_lista__cartoes">Lista Cartoes</string>
+    <string name="title_activity_lista_veiculos">Seus Veiculos</string>
+    <string name="title_activity_spinner_layout">SpinnerLayout</string>
+</resources>

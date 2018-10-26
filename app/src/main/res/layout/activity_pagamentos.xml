@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.thomasgreg.findmypet.PagamentosActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100px"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20px"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_span="3"
+                android:text="Selecionar o número de CAD para comprar"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/btn_minus"/>
+
+            <TextView
+                android:id="@+id/tvQtd"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="0"
+                android:inputType="number" />
+
+            <ImageButton
+                android:id="@+id/imgMais"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/btn_plus"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tvValor"
+                android:layout_span="3"
+                android:text="R$0,00"
+                android:textSize="30dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <CheckBox android:id="@+id/chkDebito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:text="Usar cartão selecionado como débito"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox android:id="@+id/chkCategoriaGratuito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:text="Categoria Gratis de Estacionamento ?"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/btPagar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:layout_weight="1"
+                android:text="Pagar" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

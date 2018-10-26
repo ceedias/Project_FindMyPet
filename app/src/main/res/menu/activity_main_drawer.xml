@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cachorro"
+            android:icon="@mipmap/ic_cachorro"
+            android:title="Cachorros Perdidos" />
+
+        <item
+            android:id="@+id/nav_perdidos"
+            android:icon="@mipmap/ic_perdido"
+            android:title="Cadastrar Perdidos" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ferramentas" />
+
+    </group>
+
+    <item android:title="Comunicações">
+        <menu>
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@mipmap/ic_sair"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

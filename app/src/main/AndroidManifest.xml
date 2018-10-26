@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.findmypet.estaciona">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logofindmyypet"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Enter your GoogleMap Android API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCH70lYmKEb3Nw-Wtu2j4YQ9iOZsgkIKVo" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.CadastroActivity"
+            android:label="@string/title_activity_cadastro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="br.com.findmypet.findmypet.ListaCartaoActivity"
+            android:label="@string/title_activity_lista_cartao"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="br.com.findmypet.findmypet.DetalhesCartaoActivity" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.ListaVeiculosActivity"
+            android:label="@string/title_activity_lista_veiculos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.AdicionarVeiculoActivity"
+            android:label="Cadastro de Veiculos"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.CadastroPerdidosActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.PagamentosActivity"
+            android:label="Pagamentos"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="br.com.findmypet.findmypet.ExtratoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="br.com.findmypet.findmypet.UsarCredito"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
